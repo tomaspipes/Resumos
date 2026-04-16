@@ -495,7 +495,7 @@ r ≈ 0,759
 
 #### 7.3.3 Interpretação da Intensidade
 
-| Valor absoluto |r| | Intensidade |
+| Valor absoluto \|r\| | Intensidade |
 |:---:|---|
 | 0,00 – 0,19 | Muito fraca (ou nula) |
 | 0,20 – 0,39 | Fraca |
