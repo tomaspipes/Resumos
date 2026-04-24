@@ -696,183 +696,164 @@ Ferramenta de UX Research que ajuda a compreender melhor o utilizador, organizan
 
 > **Estrutura do exame:**
 > - Parte I — Quiz Teórico: 16 perguntas de escolha múltipla (4 opções, 1 correta) → 8 pontos
-> - Parte II — Perguntas de Desenvolvimento → 12 pontos
+> - Parte II — 3 Perguntas de Desenvolvimento → 12 pontos
 
 ---
 
-### 📝 Parte I — Exemplos de Perguntas de Escolha Múltipla
+### 📝 Parte I — Escolha Múltipla
 
-**1. Qual das seguintes opções descreve corretamente o conceito de "Affordance" segundo Don Norman?**
-- a) A capacidade do sistema de fornecer feedback ao utilizador após uma ação
-- b) A propriedade de um objeto que indica como pode ser utilizado ✅
-- c) A relação entre os controlos e o efeito que produzem no sistema
-- d) A limitação do número de ações possíveis para guiar o utilizador
-
-**2. A "Mother of All Demos" (1968) foi apresentada por:**
-- a) Steve Jobs
-- b) Alan Kay
-- c) Doug Engelbart ✅
-- d) Tim Berners-Lee
-
-**3. Segundo a Lei de Miller, quantos itens consegue o ser humano reter na memória de curto prazo?**
-- a) 3 ± 1
-- b) 5 ± 1
-- c) 7 ± 2 ✅
-- d) 10 ± 3
-
-**4. Qual é o nível de conformidade WCAG adotado como referência pela indústria?**
-- a) Level A
-- b) Level AA ✅
-- c) Level AAA
-- d) Level AAAA
-
-**5. No modelo GOMS, o que representam os "Operators"?**
-- a) Os objetivos que o utilizador pretende alcançar
-- b) As regras que determinam qual método usar
-- c) As ações básicas que o utilizador pode realizar ✅
-- d) As sequências de passos para alcançar um objetivo
-
-**6. A sigla POUR nos princípios das WCAG corresponde a:**
-- a) Prático, Operável, Universal, Responsivo
-- b) Perceptível, Operável, Compreensível, Robusto ✅
-- c) Perceptível, Organizado, Utilizável, Responsivo
-- d) Prático, Orientado, Universal, Robusto
-
-**7. Qual das seguintes NÃO é uma das 5 dimensões do Design de Interação (Gillian Crampton Smith)?**
-- a) Palavras
-- b) Tempo
-- c) Acessibilidade ✅
-- d) Comportamento
-
-**8. A avaliação heurística distingue-se da avaliação de usabilidade porque:**
-- a) É realizada com utilizadores reais e protótipos
-- b) É realizada por especialistas antes do produto chegar ao utilizador ✅
-- c) Utiliza questionários como o SUS e o UEQ
-- d) Mede exclusivamente o tempo de execução de tarefas
-
-**9. Segundo a Lei de Hick, o que acontece quando o número de opções apresentadas ao utilizador aumenta?**
-- a) O utilizador fica mais satisfeito com a variedade
-- b) O tempo de decisão diminui devido a mais contexto
-- c) O tempo de decisão aumenta ✅
-- d) Não há impacto mensurável no tempo de decisão
-
-**10. Qual das seguintes camadas do modelo de JJ Garrett corresponde à definição de funcionalidades e pesquisa de concorrentes?**
-- a) Strategy (Estratégia)
-- b) Scope (Âmbito) ✅
-- c) Structure (Estrutura)
-- d) Skeleton (Esqueleto)
-
-**11. O conceito de "Homem Aumentado" de Engelbart refere-se a:**
-- a) Implantes cibernéticos para aumentar capacidades físicas
-- b) O computador como potencializador do intelecto humano ✅
-- c) A substituição do trabalho humano por máquinas
-- d) O uso de exoesqueletos em ambientes industriais
-
-**12. A interface WIMP (Windows, Icons, Menus, Pointer) foi introduzida pela:**
-- a) Apple, com o Macintosh em 1984
-- b) Microsoft, com o Windows 1.0 em 1985
-- c) Xerox PARC, em 1974/75 ✅
-- d) IBM, com o PC em 1981
-
-**13. Qual dos seguintes é um componente do tipo "Informational" na UI?**
-- a) Checkbox
-- b) Breadcrumb
-- c) Tooltip ✅
-- d) Radio button
-
-**14. A ISO 9241-110 inclui um princípio adicionado recentemente que reflete a preocupação com o aspeto emocional. Qual é?**
-- a) Acessibilidade
-- b) Controlabilidade
-- c) Engajamento / Envolvimento do utilizador ✅
-- d) Responsividade
-
-**15. No mapa de empatia, qual dos seguintes NÃO é um dos quadrantes/secções?**
-- a) Pensa e sente
-- b) Diz e faz
-- c) Dores (pains)
-- d) Funcionalidades do produto ✅
-
-**16. Qual é a ordem correta das 5 camadas de JJ Garrett, do abstrato para o concreto?**
-- a) Scope → Strategy → Structure → Surface → Skeleton
-- b) Strategy → Scope → Structure → Skeleton → Surface ✅
-- c) Surface → Skeleton → Structure → Scope → Strategy
-- d) Strategy → Structure → Scope → Skeleton → Surface
+**1. Qual das seguintes opções descreve corretamente uma das principais etapas da evolução tecnológica das interfaces de computador?**
+- a) Transição de interfaces baseadas em texto para interfaces gráficas e interativas. ✅
+- b) Substituição de teclados e mouses por comandos de voz em todos os sistemas operacionais.
+- c) Desenvolvimento de interfaces exclusivamente baseadas em inteligência artificial.
+- d) Adoção de sistemas exclusivamente baseados em toque e gestos desde o início da informática.
 
 ---
 
-### 📝 Parte II — Exemplos de Perguntas de Desenvolvimento
-
-**Pergunta 1 — Modelos Mentais e Design de Interação (≈3 pontos)**
-
-> Explique o conceito de modelo mental no contexto do HCI. Dê dois exemplos concretos (abordados nas aulas) em que um design de interface respeita ou contradiz o modelo mental do utilizador, e analise as consequências para a experiência do utilizador em cada caso.
-
-*Pontos-chave esperados: definição de modelo mental (Kenneth Craik), como se formam (experiência prévia, conhecimento, expectativas), exemplos como o slider de volume (horizontal intuitivo vs. vertical que funciona horizontalmente = mau design), ignição de automóvel (chave física vs. botão digital vs. automática), consequências (confusão, frustração vs. interação natural e previsível), importância de alinhar design com modelos mentais.*
+**2. Como a evolução dos fatores humanos influenciou o desenvolvimento dos paradigmas do "Human Computer Interaction" (HCI)?**
+- a) A evolução dos fatores humanos não teve impacto significativo nos paradigmas do HCI, que sempre se focaram apenas na tecnologia.
+- b) O foco nos fatores humanos resultou no desenvolvimento de interfaces mais acessíveis, intuitivas e centradas no usuário, com ênfase em ergonomia. ✅
+- c) A evolução dos fatores humanos levou à simplificação das interfaces, priorizando a estética em vez da funcionalidade.
+- d) A melhoria nos fatores humanos gerou a necessidade de interfaces mais complexas, com múltiplas opções para os usuários.
 
 ---
 
-**Pergunta 2 — Princípios de Norman aplicados a um cenário (≈3 pontos)**
-
-> Considere o seguinte cenário: um quiosque de check-in num aeroporto. Identifique e explique como pelo menos 4 dos 7 princípios de design de interação de Don Norman se aplicam (ou devem aplicar) ao design deste quiosque. Para cada princípio, dê um exemplo concreto de boa ou má aplicação.
-
-*Pontos-chave esperados: Visibilidade (opções claramente visíveis no ecrã), Feedback (confirmação visual/sonora após scan do boarding pass), Restrições (desativar botões inaplicáveis), Mapeamento (disposição dos botões reflete a sequência lógica), Consistência (mesma linguagem visual em todos os ecrãs), Affordance (botões parecem clicáveis, zona de scan claramente identificada), Carga Cognitiva (passos mínimos, linguagem simples).*
-
----
-
-**Pergunta 3 — GOMS aplicado a uma tarefa (≈3 pontos)**
-
-> Aplique o modelo GOMS à tarefa de "fazer uma reserva de mesa num restaurante através de uma app mobile". Identifique os Goals, Operators, Methods e Selection Rules. Estime tempos razoáveis para cada operador e calcule o tempo total da tarefa.
-
-*Pontos-chave esperados: Goal (reservar mesa), Operators (abrir app, selecionar restaurante, escolher data/hora, selecionar nº pessoas, confirmar reserva), Methods (sequência completa de operadores), Selection Rules (se o restaurante é favorito → aceder por favoritos; se não → pesquisar por nome/localização), estimativa de tempos por operador e somatório total, demonstração de que GOMS permite medir eficiência.*
+**3. Quais são os aspectos centrais do Human-Computer Interaction (HCI) que devem ser considerados no design de interfaces para garantir uma experiência de usuário eficaz e eficiente?**
+- a) Otimização do desempenho do sistema, compatibilidade com hardware de baixo custo e personalização do design visual.
+- b) Velocidade de resposta do sistema, compatibilidade com dispositivos móveis e integração com redes sociais.
+- c) Usabilidade, acessibilidade, consistência na interação e adaptação do sistema às necessidades do usuário e contexto de uso. ✅
+- d) Foco em funcionalidades complexas, segurança de dados e integração com plataformas de terceiros.
 
 ---
 
-**Pergunta 4 — WCAG e Acessibilidade (≈3 pontos)**
-
-> Explique os 4 princípios das WCAG (POUR) e, para cada um, dê um exemplo prático de como um website de e-commerce pode cumprir esse princípio. Refira ainda os 3 níveis de conformidade e qual é o padrão de referência na indústria.
-
-*Pontos-chave esperados: Perceptível (alt text nas imagens de produtos, contraste adequado nos preços), Operável (navegação completa por teclado, botão "Adicionar ao carrinho" com área clicável suficiente), Compreensível (mensagens de erro claras no checkout, linguagem simples nas descrições), Robusto (HTML semântico, compatibilidade com leitores de ecrã, labels nos formulários de pagamento). Níveis: A (básico), AA (referência da indústria), AAA (ideal mas nem sempre prático).*
-
----
-
-**Pergunta 5 — Metodologia UX completa (≈3 pontos)**
-
-> Descreva, de forma encadeada, como as ferramentas de UX Research (Mapa de Empatia, Persona, User Journey, User Scenario, Storyboard e User Task Flow) se complementam no processo de design centrado no utilizador. Ilustre com um exemplo prático de uma app de transportes públicos.
-
-*Pontos-chave esperados: sequência lógica das ferramentas, como cada uma alimenta a seguinte (Mapa de Empatia → insights para criar Persona → Persona como base da User Journey → Journey identifica pontos de fricção → Scenario narra o uso específico → Storyboard visualiza a narrativa → Task Flow mapeia ações concretas na interface → dá origem a wireframes). Exemplo coerente aplicado a transportes públicos.*
+**4. Como é que a evolução dos fatores humanos influenciou o desenvolvimento dos paradigmas de interação humano-computador (HCI) ao longo do tempo?**
+- a) A evolução dos fatores humanos resultou na simplificação das interfaces, priorizando a estética visual e a complexidade do software em vez da experiência do usuário.
+- b) Os fatores humanos não tiveram influência significativa nos paradigmas do HCI, que sempre se basearam exclusivamente em avanços tecnológicos.
+- c) Com o foco nos fatores humanos, os paradigmas do HCI passaram a valorizar a usabilidade, ergonomia e interação centrada no usuário, promovendo interfaces mais acessíveis e intuitivas. ✅
+- d) A evolução dos fatores humanos direcionou os paradigmas do HCI para a construção de interfaces de alta complexidade, com múltiplas funcionalidades avançadas sem considerar as limitações cognitivas do usuário.
 
 ---
 
-**Pergunta 6 — Leis de UX num redesign (≈3 pontos)**
-
-> Imagine que foi contratado para redesenhar o menu de navegação de um website institucional que atualmente tem 25 opções no menu principal, botões pequenos e um layout inconsistente entre páginas. Utilizando as leis de Fitts, Hick, Miller e Jacob, proponha melhorias concretas e justifique cada uma com a lei correspondente.
-
-*Pontos-chave esperados: Lei de Hick (reduzir 25 opções para ≤7 categorias principais com submenus), Lei de Miller (agrupar conteúdo em chunks de 7±2), Lei de Fitts (aumentar tamanho dos botões e reduzir distância entre alvos frequentes), Lei de Jacob (seguir convenções que os utilizadores já conhecem de outros sites — logo em cima à esquerda, pesquisa em cima à direita, navegação no topo). Justificação clara e melhorias concretas para cada lei.*
-
----
-
-### 💡 Dicas para o Exame
-
-**Para a Parte I (Escolha Múltipla):**
-- Atenção a **datas e autores** (Engelbart 1968, Xerox PARC 1974/75, Apple Lisa 1983, Mac 1984)
-- Memorizar as **siglas e seus significados** (GOMS, WCAG, POUR, WIMP, ISO 9241)
-- Distinguir claramente conceitos semelhantes (affordance vs. mapeamento, avaliação heurística vs. usabilidade)
-- Rever os **princípios de Norman** e as **leis de UX** — são os mais testáveis em escolha múltipla
-- Saber os **níveis WCAG** e o que cada um implica
-- Conhecer as **5 camadas de Garrett** na ordem correta
-
-**Para a Parte II (Desenvolvimento):**
-- Estruturar a resposta com **introdução, desenvolvimento e conclusão**
-- **Definir sempre o conceito** antes de o aplicar ao cenário
-- Usar **exemplos concretos** das aulas (slider de volume, ignição, quiosque, etc.)
-- Nas perguntas de aplicação, **ligar teoria à prática** — não basta listar definições
-- No GOMS, mostrar **cálculos de tempo** para demonstrar compreensão da medição de eficiência
-- Nas perguntas sobre ferramentas UX, mostrar a **relação encadeada** entre elas
+**5. Qual é o papel dos modelos mentais em Human-Computer Interaction (HCI) e como é que estes modelos influenciam a interação do usuário com sistemas computacionais?**
+- a) Modelos mentais são criados automaticamente por sistemas inteligentes, que ajustam a interface de acordo com o comportamento do usuário, sem necessidade de consideração por parte do designer.
+- b) Modelos mentais têm pouca relevância em HCI, pois os usuários geralmente compreendem a interface de forma intuitiva sem a necessidade de qualquer representação interna.
+- c) Modelos mentais ajudam os usuários a formar representações internas do funcionamento de um sistema, facilitando a interação e a previsibilidade das ações, mas podem levar a falhas de usabilidade se os sistemas não corresponderem às expectativas dos usuários. ✅
+- d) Modelos mentais em HCI são exclusivamente teóricos e não influenciam diretamente a forma como os usuários interagem com interfaces de sistemas.
 
 ---
 
-*Boa sorte no teste! 🍀*
+**6. Quais são as principais dimensões dos fatores humanos em Human-Computer Interaction (HCI) que influenciam o design de interfaces e a interação com os usuários?**
+- a) Frequência de uso de dispositivos móveis, largura de banda da rede e complexidade algorítmica.
+- b) Capacidade de processamento de dados, velocidade de resposta do sistema e compatibilidade com hardware.
+- c) Memória, atenção, percepção visual, habilidades motoras, fatores emocionais e sociais. ✅
+- d) Capacidade do usuário de realizar múltiplas tarefas simultaneamente, ignorando aspetos cognitivos e físicos.
 
 ---
+
+**7. Quais das seguintes dimensões do design de interação NÃO são consideradas fundamentais para uma interface eficaz e a experiência do usuário?**
+- a) Acessibilidade, personalização da experiência do usuário e a capacidade de adaptação a diferentes dispositivos e contextos.
+- b) Clareza na navegação, facilidade de aprendizado e a redução de erros do usuário.
+- c) Feedback do sistema, consistência nas interações, usabilidade e adaptabilidade ao contexto de uso e às necessidades do usuário.
+- d) Complexidade no design visual com elementos gráficos e animações para atrair a atenção do usuário. ✅
+
+---
+
+**8. Quais das seguintes alternativas descrevem corretamente as 5 dimensões do design de interação e como impactam a criação de interfaces de usuário?**
+- a) 1D é caracterizado pela interação por comandos, 2D é a manipulação de gráficos de alta resolução, 3D descreve ambientes virtuais, 4D utiliza gestos, e 5D é a aplicação de inteligência artificial para prever comportamentos.
+- b) 1D refere-se ao uso de interfaces de linha de comando, 2D envolve elementos visuais fixos, 3D diz respeito a gráficos em três dimensões, 4D envolve o controle da interação através do som, e 5D descreve interações através de emoções e sentimentos.
+- c) 1D envolve o uso de palavras como meio principal de interação, 2D lida com representações visuais, 3D usa objetos físicos ou espaço tridimensional, 4D se refere ao uso de tempo como animações ou transições, e 5D considera o comportamento do usuário e como a interação pode se adaptar a ele. ✅
+- d) 1D está relacionado à interação com texto, 2D foca em imagens estáticas, 3D envolve o uso de realidade aumentada, 4D refere-se ao comportamento do usuário ao longo do tempo, e 5D é a manipulação de objetos físicos no mundo real.
+
+---
+
+**9. Qual é a principal aplicação da Lei de Fitts no design de interação e como afeta esta Lei a eficácia das interfaces?**
+- a) A Lei de Fitts propõe que o tempo necessário para uma ação é maior quando há muitos elementos em uma interface, o que obriga os usuários a realizar mais passos.
+- b) A Lei de Fitts afirma que a perceção visual do usuário é afetada principalmente pelo design gráfico, e não pela distância ou tamanho dos controlos.
+- c) A Lei de Fitts sugere que o número de opções disponíveis em uma interface deve ser o maior possível, garantindo que o usuário tenha uma escolha ampla para cada ação.
+- d) A Lei de Fitts afirma que a facilidade de interação com um controlo depende da sua distância do usuário e do tamanho do alvo, recomendando que alvos maiores e mais próximos ao usuário facilitam a interação e reduzem o tempo necessário para a ação. ✅
+
+---
+
+**10. Como a Lei de Hicks, Lei de Miller, e Lei de Jacob influenciam o design de interfaces de usuário, considerando a quantidade de escolhas e a carga cognitiva?**
+- a) A Lei de Hicks recomenda que mais opções devem ser apresentadas para criar mais oportunidades de interação, a Lei de Miller argumenta que o usuário pode processar quantas informações quiser, e a Lei de Jacob sugere que a interface deve ser muito complexa para estimular o aprendizado contínuo.
+- b) A Lei de Hicks sugere que a quantidade de escolhas aumenta proporcionalmente o tempo de decisão; a Lei de Miller afirma que a quantidade de informações que um usuário pode processar é limitada a sete itens por vez; e a Lei de Jacob enfatiza que interfaces devem ser projetadas com base nos modelos mentais já existentes nos utilizadores, seguindo convenções conhecidas. ✅
+- c) A Lei de Hicks defende que mais escolhas sempre melhoram a usabilidade, a Lei de Miller sugere que o número de itens visíveis na tela deve ser infinito, e a Lei de Jacob propõe que os usuários devem ser constantemente desafiados com novas opções para engajá-los.
+- d) A Lei de Hicks afirma que a decisão do usuário se torna mais rápida com mais opções; a Lei de Miller sugere que a carga cognitiva deve ser limitada a mais de sete opções para otimizar a interação; e a Lei de Jacob defende que a interface deve ser minimalista, com pouca ou nenhuma mudança entre estados.
+
+---
+
+**11. No contexto da interação pessoa-máquina, o que representam a lacuna da execução e a lacuna da avaliação no design de interfaces?**
+- a) A lacuna da execução e a da avaliação são barreiras exclusivamente relacionadas com a estética da interface.
+- b) A lacuna da execução diz respeito à dificuldade do utilizador em saber o que fazer; a lacuna da avaliação diz respeito à dificuldade em perceber o que aconteceu após a ação. ✅
+- c) A lacuna da execução refere-se à dificuldade de perceber os resultados de uma ação; a lacuna da avaliação refere-se à dificuldade de saber como executar uma ação.
+- d) Ambas as lacunas referem-se apenas a problemas técnicos no código que afetam o desempenho da interface.
+
+---
+
+**12. No design de interfaces digitais, diferentes áreas do conhecimento contribuem para compreender melhor o comportamento e as necessidades dos utilizadores. Qual das seguintes afirmações descreve corretamente a forma como disciplinas como a psicologia cognitiva e a antropologia influenciam o design de interfaces?**
+- a) A psicologia cognitiva propõe estratégias como o chunking, que consiste em dividir a informação em partes menores para facilitar o processamento e a navegação pelos utilizadores. ✅
+- b) A psicologia cognitiva recomenda aumentar a quantidade de informação apresentada numa interface para estimular a memória do utilizador.
+- c) A antropologia sugere que os elementos visuais devem ser universais, evitando qualquer adaptação cultural nas interfaces digitais.
+- d) A antropologia defende que as cores têm sempre o mesmo significado em todas as culturas, permitindo padronizar o design globalmente.
+
+---
+
+**13. No contexto do modelo GOMS (Goals, Operators, Methods, and Selection Rules), o design de uma interface deve facilitar a relação entre os objetivos do utilizador e as ações necessárias para os alcançar. O que caracteriza uma interface bem concebida segundo este modelo?**
+- a) Uma interface que limita as ações do utilizador para evitar erros durante a interação.
+- b) Uma interface em que o utilizador consegue definir um objetivo, compreender os passos necessários e executar as ações de forma intuitiva através do sistema. ✅
+- c) Uma interface que exige que o utilizador memorize todos os comandos antes de iniciar a interação.
+- d) Uma interface que apresenta o maior número possível de funcionalidades no ecrã principal para reduzir o número de cliques.
+
+---
+
+**14. No design de interação, compreender as limitações cognitivas e emocionais dos utilizadores é essencial para criar interfaces eficazes e experiências positivas. Qual das seguintes afirmações descreve corretamente a relação entre cognição, emoção e design de interfaces?**
+- a) As limitações cognitivas dizem respeito apenas à velocidade de processamento da informação, não estando relacionadas com memória ou atenção.
+- b) Cognição e emoção são interdependentes: estados emocionais como frustração ou satisfação podem influenciar a tomada de decisões e a forma como os utilizadores interagem com uma interface. ✅
+- c) Sistemas digitais devem evitar qualquer tipo de feedback emocional para garantir uma interação mais objetiva e racional.
+- d) As emoções dos utilizadores têm pouca influência na interação com sistemas digitais, sendo a cognição o único fator relevante para o design.
+
+---
+
+**15. No design de produtos e serviços digitais inclusivos, é importante considerar diferentes tipos de barreiras de acessibilidade que podem afetar os utilizadores.**
+- a) As barreiras de acessibilidade podem ser visuais, motoras, auditivas ou cognitivas e podem afetar qualquer utilizador, seja de forma permanente, temporária ou devido ao contexto de utilização. ✅
+- b) Problemas de acessibilidade surgem apenas em interfaces complexas e não afetam aplicações simples ou do dia a dia.
+- c) As barreiras de acessibilidade dizem respeito apenas a utilizadores com deficiências permanentes, não sendo necessário considerar situações temporárias ou contextuais.
+- d) A acessibilidade em interfaces digitais é resolvida apenas através do aumento do tamanho do texto e do contraste visual.
+
+---
+
+**16. As Web Content Accessibility Guidelines (WCAG) definem três níveis de conformidade — A, AA e AAA. Qual das seguintes afirmações descreve corretamente a relação entre estes níveis?**
+- a) Os níveis A, AA e AAA são modelos alternativos de design, sendo necessário escolher apenas um durante o desenvolvimento.
+- b) O nível AA define apenas requisitos técnicos de programação e não inclui orientações relacionadas com a experiência dos utilizadores.
+- c) O nível A corresponde ao nível máximo de acessibilidade, enquanto AA e AAA representam apenas recomendações adicionais sem impacto relevante na experiência.
+- d) O nível A estabelece requisitos básicos de acessibilidade, AA acrescenta critérios que melhoram significativamente a utilização e AAA representa recomendações adicionais avançadas. ✅
+
+---
+
+### 📝 Parte II — Perguntas de Desenvolvimento (4 pontos cada)
+
+**Pergunta 17 — 5 Dimensões do Design de Interação**
+
+> No design de interação, as cinco dimensões propostas para a conceção de interfaces devem ser compreendidas como elementos interligados que, em conjunto, moldam a experiência do utilizador. Analise de que forma decisões tomadas em uma ou mais dimensões podem influenciar o comportamento do utilizador e a forma como a experiência se desenvolve ao longo do tempo. Explique a relação de interdependência entre estas dimensões e apresente um exemplo de uma interface digital em que essa relação seja evidente, discutindo tanto os impactos positivos como eventuais problemas que possam surgir quando essas dimensões não estão devidamente alinhadas.
+
+*Pontos-chave: definir as 5 dimensões (1D Palavras, 2D Visuais, 3D Espaço/Objetos, 4D Tempo, 5D Comportamento); explicar interdependência (ex: 1D+2D alinham expectativa, 4D comunica causalidade, 5D é o resultado emergente); exemplo concreto (ex: Google Maps, app bancária); impactos positivos (fluxo natural, confiança no sistema); problemas de desalinhamento (frustração, erros, abandono).*
+
+---
+
+**Pergunta 18 — Modelos Mentais**
+
+> Os modelos mentais influenciam fortemente a forma como os utilizadores interagem com interfaces digitais. Explique o que são modelos mentais no contexto do design de interação e analise como a discrepância entre o modelo mental do utilizador e o modelo do sistema pode gerar problemas de usabilidade. Ilustre com um exemplo e proponha estratégias de design que minimizem essa discrepância.
+
+*Pontos-chave: definição (representação interna do funcionamento do sistema, formada por experiência prévia e expectativas); discrepância = rutura de expectativa → frustração, erros, abandono; exemplo (slider de volume horizontal vs. vertical que funciona horizontalmente, ignição de carro física vs. botão); estratégias (seguir convenções — Lei de Jacob, onboarding, feedback imediato, affordances claras).*
+
+---
+
+**Pergunta 19 — Contexto de Uso no Design**
+
+> De que forma o contexto em que um produto ou serviço será utilizado influencia o processo de design de interfaces e a experiência do utilizador? Explique como fatores como ambiente, cultura, necessidades do utilizador e objetivos específicos podem moldar as decisões de design, e discuta exemplos em que essas variáveis impactam significativamente o sucesso ou fracasso de uma interface.
+
+*Pontos-chave: contexto físico (luz intensa → contraste, mobilidade → botões grandes, ruído → alternativa visual ao som); contexto cultural (cores com significados diferentes, direção de leitura RTL vs LTR); necessidades e objetivos (utilizador novato vs. expert, uso pontual vs. diário); exemplos de sucesso/fracasso (app de mapas que não funciona offline em zonas sem rede, quiosque de aeroporto em vários idiomas).*
+
 
 ## ✅ Respostas Completas — Parte I (Escolha Múltipla)
 
