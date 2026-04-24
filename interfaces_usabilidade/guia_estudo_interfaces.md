@@ -838,6 +838,22 @@ Ferramenta de UX Research que ajuda a compreender melhor o utilizador, organizan
 
 *Pontos-chave: definir as 5 dimensões (1D Palavras, 2D Visuais, 3D Espaço/Objetos, 4D Tempo, 5D Comportamento); explicar interdependência (ex: 1D+2D alinham expectativa, 4D comunica causalidade, 5D é o resultado emergente); exemplo concreto (ex: Google Maps, app bancária); impactos positivos (fluxo natural, confiança no sistema); problemas de desalinhamento (frustração, erros, abandono).*
 
+💡 **Resposta Exemplo:**
+
+As cinco dimensões do design de interação, propostas por Gillian Crampton Smith, não devem ser entendidas como categorias isoladas, mas como um sistema interdependente em que cada decisão numa dimensão condiciona e é condicionada pelas restantes.
+
+A **1D (Palavras)** define a linguagem da interface — os rótulos, instruções e mensagens de erro que orientam o utilizador. A **2D (Representações Visuais)** reforça ou contradiz esse texto através de ícones, cores e tipografia. Se as duas dimensões estiverem alinhadas, o utilizador forma rapidamente um modelo mental correto e sabe o que fazer. Se não estiverem — por exemplo, um botão com o texto "Confirmar" mas com uma cor vermelha associada a perigo — a ambiguidade gera hesitação.
+
+A **3D (Objetos/Espaço)** organiza fisicamente os elementos na interface: a proximidade entre controlos relacionados reduz a carga cognitiva e guia o olhar. A **4D (Tempo)** comunica causalidade através de animações, transições e feedback sonoro — o utilizador aprende que "a minha ação produziu este resultado" através da sequência temporal. Sem feedback temporal adequado, o utilizador não sabe se o sistema reagiu ou se está bloqueado.
+
+O **5D (Comportamento)** é o resultado emergente de todas as decisões anteriores: é onde a experiência se materializa, onde os modelos mentais são confirmados ou quebrados, e onde a confiança no sistema se constrói ou se perde ao longo do tempo.
+
+**Exemplo — Google Maps:**
+As instruções de navegação (1D) são imediatamente reforçadas por setas visuais e pela via destacada no mapa (2D). O espaço do ecrã está organizado de forma a que a informação crítica — distância e próxima manobra — seja sempre a mais proeminente (3D). A animação suave do recálculo de rota, acompanhada de feedback sonoro (4D), sinaliza que o sistema reagiu sem surpreender o utilizador. O resultado comportamental (5D) é uma interação confiante e automática: o utilizador não questiona o sistema, simplesmente segue.
+
+**Problemas de desalinhamento:**
+Se a mesma app recalculasse a rota em silêncio e sem animação (4D deficiente), e sem qualquer mensagem textual (1D ausente), o utilizador não saberia se o sistema estava a processar ou bloqueado. O comportamento resultante (5D) seria contraproducente: toques repetidos no ecrã, frustração e, em contexto de condução, risco de segurança. O desalinhamento entre dimensões não gera apenas má experiência — pode gerar consequências reais.
+
 ---
 
 **Pergunta 18 — Modelos Mentais**
@@ -846,6 +862,24 @@ Ferramenta de UX Research que ajuda a compreender melhor o utilizador, organizan
 
 *Pontos-chave: definição (representação interna do funcionamento do sistema, formada por experiência prévia e expectativas); discrepância = rutura de expectativa → frustração, erros, abandono; exemplo (slider de volume horizontal vs. vertical que funciona horizontalmente, ignição de carro física vs. botão); estratégias (seguir convenções — Lei de Jacob, onboarding, feedback imediato, affordances claras).*
 
+💡 **Resposta Exemplo:**
+
+Um modelo mental é a representação interna que um utilizador constrói sobre o funcionamento de um sistema, com base na sua experiência prévia, no conhecimento adquirido e nas expectativas geradas pelo contexto. Não são criados pelo sistema — são construídos pelo utilizador — e determinam como este interpreta a interface e antecipa o resultado das suas ações.
+
+Quando o modelo mental do utilizador está alinhado com o modelo real do sistema, a interação é fluida, previsível e eficiente. Quando existe discrepância, surgem problemas de usabilidade: o utilizador comete erros, fica confuso, perde tempo ou abandona a tarefa.
+
+**Exemplo 1 — Slider de volume (abordado em aula):**
+Um slider de volume horizontal, em que mover para a direita aumenta o som, respeita o modelo mental da maioria dos utilizadores — segue a convenção de que "direita = mais". O utilizador age de forma automática, sem pensar. Se o mesmo slider for apresentado verticalmente mas operar horizontalmente (mover para a direita enquanto visualmente aponta para cima), existe uma discrepância entre o modelo mental e o modelo do sistema. O utilizador hesita, testa, erra — e a confiança na interface quebra-se.
+
+**Exemplo 2 — Ignição de automóvel:**
+A chave física giratória cria um modelo mental claro e integrado na memória motora: girar = ligar. A transição para um botão de arranque digital pode criar discrepância inicial — especialmente para utilizadores que migram de carros convencionais. O modelo antigo não encaixa no novo sistema.
+
+**Estratégias para minimizar a discrepância:**
+- **Seguir convenções estabelecidas** (Lei de Jacob): os utilizadores chegam com modelos mentais formados noutros sistemas — aproveitar isso reduz a carga de aprendizagem.
+- **Affordances claras**: o design visual deve sugerir a ação correta (botão com aspeto clicável, campo de texto com cursor piscante).
+- **Feedback imediato**: confirmar ao utilizador que a ação produziu o efeito esperado reforça e corrige o modelo mental ao longo do tempo.
+- **Onboarding progressivo**: para interfaces inovadoras onde a rutura com convenções é inevitável, guiar o utilizador nas primeiras interações acelera a construção de um novo modelo mental correto.
+
 ---
 
 **Pergunta 19 — Contexto de Uso no Design**
@@ -853,5 +887,21 @@ Ferramenta de UX Research que ajuda a compreender melhor o utilizador, organizan
 > De que forma o contexto em que um produto ou serviço será utilizado influencia o processo de design de interfaces e a experiência do utilizador? Explique como fatores como ambiente, cultura, necessidades do utilizador e objetivos específicos podem moldar as decisões de design, e discuta exemplos em que essas variáveis impactam significativamente o sucesso ou fracasso de uma interface.
 
 *Pontos-chave: contexto físico (luz intensa → contraste, mobilidade → botões grandes, ruído → alternativa visual ao som); contexto cultural (cores com significados diferentes, direção de leitura RTL vs LTR); necessidades e objetivos (utilizador novato vs. expert, uso pontual vs. diário); exemplos de sucesso/fracasso (app de mapas que não funciona offline em zonas sem rede, quiosque de aeroporto em vários idiomas).*
+
+💡 **Resposta Exemplo:**
+
+O contexto de utilização é um dos fatores mais determinantes no design de interfaces, porque uma solução tecnicamente correta pode falhar completamente se não estiver adaptada ao ambiente, à cultura e às necessidades reais do utilizador no momento de uso.
+
+**Contexto físico e ambiental:**
+Uma app de navegação usada em mobilidade — a pé ou de carro — tem restrições físicas que uma app de desktop não tem: luz solar intensa reduz a legibilidade, logo o contraste tem de ser elevado; o utilizador tem uma mão ocupada, logo os alvos tácteis têm de ser grandes (Lei de Fitts); o ambiente é ruidoso, logo o feedback sonoro não chega sozinho e é necessário complemento visual. Uma interface que ignore estas condições — botões pequenos, texto cinzento sobre fundo branco, alertas apenas sonoros — falha não por razões técnicas, mas por desconhecimento do contexto.
+
+**Contexto cultural:**
+As decisões de design têm significados culturalmente variáveis. A cor vermelha significa perigo em Portugal, mas prosperidade na China. A direção de leitura da direita para a esquerda (RTL) em árabe ou hebraico implica um layout espelhado. Um ícone de "casa" pode não ser reconhecido como "página inicial" em culturas onde as habitações têm formas diferentes. Ignorar estas variáveis resulta em interfaces que funcionam para um contexto cultural mas alienam outros.
+
+**Necessidades e objetivos do utilizador:**
+Um utilizador que usa uma app bancária diariamente desenvolve eficiência e conhece os atalhos — um design minimalista e direto serve-o melhor. Um utilizador que usa a mesma app uma vez por ano precisa de maior visibilidade das opções e linguagem mais explícita. A mesma interface não pode otimizar igualmente para os dois perfis sem adaptação contextual.
+
+**Exemplo de sucesso e de fracasso:**
+O quiosque de check-in do aeroporto de Lisboa, disponível em vários idiomas e com instruções visuais claras independentes da língua, é um exemplo de design sensível ao contexto cultural e à diversidade de utilizadores. Em contraste, uma app de transportes públicos que não funciona offline — quando o utilizador está precisamente no metro sem rede — falha no momento mais crítico de uso, por ignorar o contexto físico de utilização real.
 
 
