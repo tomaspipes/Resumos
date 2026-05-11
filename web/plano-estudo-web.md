@@ -1075,6 +1075,123 @@ atualizarInterface();
 
 ---
 
+# PARTE 5 — Single Page Application (SPA)
+
+## 5.1 O que é uma SPA
+
+Uma **Single Page Application** é uma aplicação web que funciona numa **única página HTML**. Em vez de o navegador carregar uma página nova cada vez que o utilizador clica num link, o JavaScript:
+
+1. **Intercepta** a ação do utilizador
+2. **Pede dados** ao servidor (via API, usando `fetch()`)
+3. **Atualiza apenas** a parte da página que precisa de mudar (manipulando o DOM)
+
+A página **nunca recarrega**. Toda a navegação acontece no lado do cliente.
+
+### SPA vs Site tradicional
+
+| | Site Tradicional | SPA |
+|---|---|---|
+| Navegação | Cada clique carrega uma nova página HTML | A página nunca recarrega |
+| Servidor envia | HTML completo de cada página | Apenas dados (geralmente JSON) |
+| Rapidez | Mais lento (recarrega tudo) | Mais rápido após o carregamento inicial |
+| Tecnologia | HTML + links normais | JavaScript manipula o DOM |
+| Exemplos | Sites estáticos, blogs simples | Gmail, Facebook, Netflix |
+
+### O papel do estado numa SPA
+
+Numa SPA, o **estado** (secção 4.6) é ainda mais importante: é ele que determina o que aparece no ecrã. O ciclo é sempre:
+
+```
+Evento → Atualizar estado → Atualizar interface (DOM)
+```
+
+---
+
+## 5.2 Comunicação com APIs: `fetch()`
+
+Numa SPA, o JavaScript comunica com o servidor através de **APIs**. A função `fetch()` faz pedidos HTTP e recebe os dados (normalmente em formato **JSON**).
+
+### O que é JSON
+
+JSON (JavaScript Object Notation) é o formato padrão para trocar dados entre servidor e cliente. Parece-se com objetos JavaScript:
+
+```json
+{
+    "nome": "Teclado",
+    "preco": 29.99,
+    "categoria": "eletrónica"
+}
+```
+
+### Como usar `fetch()` com `async/await`
+
+```javascript
+async function carregarProdutos() {
+    // 1. Fazer o pedido HTTP
+    const resposta = await fetch("https://api.exemplo.com/products");
+
+    // 2. Converter a resposta para JSON (objeto JavaScript)
+    const produtos = await resposta.json();
+
+    // 3. Usar os dados para atualizar o DOM
+    let html = "<ul>";
+    for (const produto of produtos) {
+        html += `<li>${produto.nome} — ${produto.preco}€</li>`;
+    }
+    html += "</ul>";
+
+    document.getElementById("listaProdutos").innerHTML = html;
+}
+```
+
+### Palavra-chave `async` e `await`
+
+- `async` antes da função indica que ela vai fazer operações assíncronas
+- `await` pausa a execução até a operação terminar (sem bloquear a página)
+- `fetch()` retorna uma Promise — o `await` espera pela resposta
+
+```javascript
+// Sem async/await (mais confuso)
+fetch(url)
+    .then(resposta => resposta.json())
+    .then(dados => console.log(dados));
+
+// Com async/await (mais legível)
+async function carregarDados() {
+    const resposta = await fetch(url);
+    const dados = await resposta.json();
+    console.log(dados);
+}
+```
+
+### Exemplo completo da aula
+
+```javascript
+const botao = document.getElementById("btnCarregar");
+
+botao.addEventListener("click", carregarRecurso);
+
+async function carregarRecurso() {
+    const endpoint = document.getElementById("endpoint").value;
+    const url = "https://deisishop.pythonanywhere.com/" + endpoint;
+
+    const resposta = await fetch(url);
+    const dados = await resposta.json();
+
+    document.getElementById("dados").textContent = JSON.stringify(dados, null, 2);
+}
+```
+
+### Resumo SPA
+
+- Uma SPA é uma aplicação web de página única — o JS atualiza o DOM sem recarregar
+- `fetch()` faz pedidos HTTP a APIs
+- `await resposta.json()` converte a resposta para objetos JavaScript
+- Os dados são depois usados para construir/atualizar a interface via DOM
+- O estado da aplicação controla o que é mostrado ao utilizador
+
+---
+
 # Checklist Final — Antes do Teste
 
 ### HTML
@@ -1112,3 +1229,8 @@ atualizarInterface();
 - [ ] Sei usar `classList` (`.add()`, `.remove()`, `.toggle()`)
 - [ ] Sei validar um formulário com `submit` + `preventDefault()`
 - [ ] Sei o que é o estado da aplicação e como o usar
+
+### SPA (Single Page Application)
+- [ ] Sei o que é uma SPA e como difere de um site tradicional
+- [ ] Sei usar `fetch()` com `async/await` para consumir uma API
+- [ ] Sei converter a resposta para JSON e usar os dados no DOM
