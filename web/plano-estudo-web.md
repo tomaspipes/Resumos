@@ -1234,3 +1234,314 @@ async function carregarRecurso() {
 - [ ] Sei o que é uma SPA e como difere de um site tradicional
 - [ ] Sei usar `fetch()` com `async/await` para consumir uma API
 - [ ] Sei converter a resposta para JSON e usar os dados no DOM
+
+---
+
+# Perguntas de Treino (com respostas)
+
+## HTML (5 perguntas)
+
+**P1. Qual é a diferença entre `<section>` e `<article>`?**
+
+`<article>` é conteúdo autossuficiente — faz sentido isoladamente (podes tirá-lo da página e continua a fazer sentido). `<section>` é um agrupamento temático que depende do contexto da página.
+
+---
+
+**P2. Porque colocamos o `<script>` antes do `</body>` em vez de no `<head>`?**
+
+O navegador lê o HTML de cima para baixo. Se o script estiver no `<head>`, tenta aceder a elementos que **ainda não existem no DOM** (ex: `getElementById` retorna `null`). Colocando antes do `</body>`, todo o HTML já foi lido. Alternativa: usar `defer` no `<head>`:
+```html
+<script src="script.js" defer></script>
+```
+
+---
+
+**P3. Para que serve `<meta name="viewport" content="width=device-width, initial-scale=1.0">`?**
+
+Torna a página responsiva em dispositivos móveis. Sem este meta tag, o browser mobile mostra a página em miniatura (como se fosse desktop). `width=device-width` adapta a largura ao ecrã e `initial-scale=1.0` define o zoom inicial a 100%.
+
+---
+
+**P4. Quantos `<main>` podemos ter numa página? E `<header>`?**
+
+`<main>` — **apenas 1** por página. `<header>` — **pode aparecer várias vezes** (um para a página, outro dentro de um `<article>` ou `<section>`). O mesmo vale para `<footer>`.
+
+---
+
+**P5. O que está errado neste código?**
+
+```html
+<head>
+    <title>A minha página</title>
+    <script src="app.js"></script>
+</head>
+<body>
+    <div id="cabecalho">
+        <div id="menu">
+            <a href="/">Home</a>
+        </div>
+    </div>
+    <div id="conteudo">
+        <p>Bem-vindo</p>
+    </div>
+</body>
+```
+
+**Resposta:**
+1. O `<script>` devia estar antes do `</body>` (ou com `defer`)
+2. Falta semântica — `<div id="cabecalho">` → `<header>`, `<div id="menu">` → `<nav>`, `<div id="conteudo">` → `<main>`
+3. Faltam `<meta charset="UTF-8">` e `<meta name="viewport">`
+
+---
+
+## CSS (5 perguntas)
+
+**P6. Qual é a diferença entre `margin` e `padding`?**
+
+Ambos fazem parte do Box Model. De dentro para fora: **conteúdo → padding → border → margin**.
+- `padding` = espaço **interior** (entre o conteúdo e a border)
+- `margin` = espaço **exterior** (entre a border e os elementos vizinhos)
+
+---
+
+**P7. O que faz `display: inline-block` que `display: inline` não consegue?**
+
+`inline` ignora `width`, `height` e `margin`/`padding` vertical. `inline-block` **aceita tudo isso** mas continua na mesma linha que os outros elementos (ao contrário de `block` que força nova linha).
+
+| Tipo | Na mesma linha? | Aceita width/height? |
+|------|-----------------|---------------------|
+| `inline` | ✅ Sim | ❌ Não |
+| `inline-block` | ✅ Sim | ✅ Sim |
+| `block` | ❌ Não (nova linha) | ✅ Sim |
+
+---
+
+**P8. O que faz este CSS?**
+
+```css
+:root {
+    --cor-principal: #1e3a5f;
+}
+h1 {
+    color: var(--cor-principal);
+}
+```
+
+**Resposta:** Declara uma **variável CSS** chamada `--cor-principal` em `:root` (que representa o `<html>`). Depois usa `var(--cor-principal)` para aplicar essa cor a todos os `<h1>`. A vantagem é que se quisermos mudar a cor em todo o site, mudamos **num sítio só**.
+
+---
+
+**P9. Como criar um layout de 3 colunas iguais com Grid, que passe a 1 coluna em telemóvel?**
+
+```css
+.grelha {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;  /* 3 colunas iguais */
+}
+
+@media (max-width: 600px) {
+    .grelha {
+        grid-template-columns: 1fr;  /* 1 coluna */
+    }
+}
+```
+
+`1fr` = 1 fração do espaço disponível.
+
+---
+
+**P10. Qual é a diferença entre `em` e `rem`?**
+
+Ambas são unidades relativas, mas:
+- `em` é relativa ao `font-size` do **elemento pai**
+- `rem` é relativa ao `font-size` do **`<html>`** (root)
+
+`rem` é mais previsível porque não depende do contexto/nível de aninhamento.
+
+---
+
+## JavaScript Fundamentos (4 perguntas)
+
+**P11. Qual é o resultado de cada expressão?**
+
+```javascript
+console.log(5 == "5");   // true  — == converte tipos
+console.log(5 === "5");  // false — === compara tipo E valor
+console.log("2" + 3);   // "23"  — o + com string CONCATENA
+console.log("2" * 3);   // 6     — os outros operadores convertem para número
+```
+
+⚠️ O `+` é o único operador que concatena strings em vez de converter. Armadilha clássica!
+
+---
+
+**P12. Quais são os valores "falsy" em JavaScript?**
+
+São exatamente **6 valores** que se convertem em `false`:
+
+| Valor | Tipo |
+|-------|------|
+| `0` | number |
+| `""` | string vazia |
+| `null` | null |
+| `undefined` | undefined |
+| `NaN` | number |
+| `false` | boolean |
+
+**Tudo o resto é truthy**, incluindo armadilhas como `"0"` (string não vazia), `" "` (espaço), `[]` (array vazio).
+
+---
+
+**P13. Calcula a média das notas deste array de objetos.**
+
+```javascript
+const alunos = [
+    { nome: "Ana", nota: 20 },
+    { nome: "Maria", nota: 8 },
+    { nome: "Carla", nota: 12 }
+];
+```
+
+**Resposta com `for`:**
+```javascript
+let soma = 0;
+for (let i = 0; i < alunos.length; i++) {
+    soma += alunos[i].nota;
+}
+const media = soma / alunos.length;
+console.log(media);  // 13.33
+```
+
+**Resposta com `forEach`:**
+```javascript
+let soma = 0;
+alunos.forEach(a => soma += a.nota);
+console.log(soma / alunos.length);
+```
+
+⚠️ Erros comuns: usar `int` em vez de `let`, escrever `lenght` em vez de `length`, escrever `alunos.nota` em vez de `alunos[i].nota`.
+
+---
+
+**P14. Diferença entre `let`, `const` e `var`? Qual usar por defeito?**
+
+- `const` — constante, não pode ser reatribuída. **Usar por defeito.**
+- `let` — pode mudar de valor. Usar quando o valor precisa de mudar.
+- `var` — **evitar**. Tem scope de função (não respeita blocos `if`/`for`), o que causa bugs.
+
+```javascript
+if (true) {
+    var x = 10;   // x existe FORA do if! (problema)
+    let y = 20;   // y só existe DENTRO do if (correto)
+}
+console.log(x);  // 10
+console.log(y);  // ERRO: y is not defined
+```
+
+---
+
+## DOM, Eventos e Interatividade (4 perguntas)
+
+**P15. Qual a diferença entre `textContent` e `innerHTML`?**
+
+- `textContent` — insere/lê **texto puro**. Tags HTML são mostradas como texto literal.
+- `innerHTML` — insere/lê **HTML**. Tags são interpretadas e renderizadas.
+
+```javascript
+el.textContent = "Olá <strong>mundo</strong>";
+// Mostra: Olá <strong>mundo</strong>  (texto literal)
+
+el.innerHTML = "Olá <strong>mundo</strong>";
+// Mostra: Olá **mundo**  (negrito renderizado)
+```
+
+`textContent` é mais seguro; `innerHTML` quando precisas de criar HTML dinâmico.
+
+---
+
+**P16. Escreve o código para: ao clicar no botão `"btnMudar"`, adicionar a classe `"ativo"` ao parágrafo `"info"`.**
+
+```javascript
+const botao = document.getElementById("btnMudar");
+const info = document.getElementById("info");
+
+botao.addEventListener("click", adicionarClasse);
+
+function adicionarClasse() {
+    info.classList.add("ativo");
+}
+```
+
+⚠️ Erros comuns:
+- Esquecer o `document.` antes de `getElementById`
+- Escrever `addEventListener("click", funcao())` com `()` — isto executa a função imediatamente em vez de esperar pelo clique!
+
+---
+
+**P17. Como impedir que a página recarregue ao submeter um formulário?**
+
+Usar `event.preventDefault()` no evento `submit`:
+
+```javascript
+const form = document.getElementById("meuForm");
+
+form.addEventListener("submit", function(event) {
+    event.preventDefault();  // impede o recarregamento
+
+    // validações aqui...
+});
+```
+
+---
+
+**P18. Diferença entre `querySelector` e `querySelectorAll`?**
+
+| Método | Retorna |
+|--------|---------|
+| `querySelector(".msg")` | **1 elemento** — o primeiro no HTML que corresponde |
+| `querySelectorAll(".msg")` | **Todos os elementos** — uma NodeList (coleção) |
+
+```javascript
+const primeiro = document.querySelector(".msg");
+const todos = document.querySelectorAll(".msg");
+
+for (const el of todos) {
+    console.log(el.textContent);
+}
+```
+
+---
+
+## SPA — Single Page Application (2 perguntas)
+
+**P19. O que é uma SPA e como difere de um site tradicional?**
+
+Uma SPA é uma aplicação web que funciona numa **única página HTML**. Em vez de carregar uma nova página a cada clique:
+1. O JavaScript **intercepta** a ação do utilizador
+2. Faz um **pedido ao servidor via API** (com `fetch()`) e recebe **dados JSON**
+3. **Atualiza o DOM** sem recarregar a página
+
+| Site Tradicional | SPA |
+|---|---|
+| Cada link carrega uma nova página HTML | A página nunca recarrega |
+| O servidor envia HTML completo | O servidor envia só dados (JSON) |
+| Exemplos: blogs simples | Exemplos: Gmail, Netflix |
+
+---
+
+**P20. O que faz este código? Explica linha a linha.**
+
+```javascript
+async function carregarProdutos() {
+    const resposta = await fetch("https://api.exemplo.com/products");
+    const dados = await resposta.json();
+    document.getElementById("lista").innerHTML = dados[0].nome;
+}
+```
+
+**Resposta:**
+1. `async function` — declara uma função assíncrona (pode usar `await`)
+2. `await fetch(url)` — faz um **pedido HTTP** à API e espera pela resposta
+3. `await resposta.json()` — converte o corpo da resposta de **texto JSON** para um **objeto/array JavaScript**
+4. `document.getElementById("lista").innerHTML = dados[0].nome` — seleciona o elemento com `id="lista"` e coloca como conteúdo o **nome do primeiro produto** do array
