@@ -1,0 +1,406 @@
+Diga o que entende por integridade/confidencialidade/disponibilidade da informacao:
+Integridade, confidencialidade e disponibilidade são os três pilares
+fundamentais da segurança da informação, conhecidos como a tríade CIA.
+
+Integridade: Refere-se à precisão e consistência dos dados ao longo do tempo.
+Garantir a integridade significa que os dados não foram alterados de forma não
+autorizada e permanecem confiáveis.
+
+Confidencialidade: Refere-se à proteção dos dados contra acesso não autorizado.
+Garantir a confidencialidade significa que apenas pessoas autorizadas têm acesso
+aos dados, protegendo-os contra divulgação ou uso indevido.
+
+Disponibilidade: Refere-se à garantia de que os dados e sistemas estejam
+disponíveis e acessíveis quando necessário. Garantir a disponibilidade significa
+que os usuários autorizados possam acessar os dados e sistemas sem interrupções
+indesejadas, como ataques de negação de serviço (DDoS) ou falhas de hardware.
+
+---------------/---------------
+
+Explique 4 tipos de diferentes de controlos de seguranca e de um exemplo para
+cada um deles
+- Detecao - Exemplo: IDS (Intrusion Detection System)
+- Prevencao - Exemplo: Firewall
+- Correcao - Exemplo: Patch de segurança
+- Dissuacao - Exemplo: Políticas de segurança e conscientização dos funcionários
+  ou Honeypots: sistema fragil falso para atrair e enganar atacantes
+- Recuperacao - Exemplo: Backup e plano de recuperação de desastres
+- Compensacao - Exemplo: Seguro cibernético para cobrir perdas financeiras
+  decorrentes de ataques cibernéticos
+
+---------------/---------------
+
+Enumere e explique 4 prinicipios da protecao de informacao Saltzer e Schroeder:
+1. Princípio do menor privilégio: Os usuários e processos devem ter apenas os
+   privilégios necessários para realizar suas tarefas, minimizando o risco de
+   abuso ou exploração.
+2. Predefinicoes Seguras (Fail-Safe): Os sistemas devem ser projetados para falhar de maneira segura, ou seja,
+   em caso de falha, o sistema deve entrar em um estado seguro que minimize os
+   danos.
+3. Economia de mecanismos: O sistema deve ser projetado com o menor número
+   possível de mecanismos de segurança, para reduzir a complexidade e o
+   potencial de erros.
+4. Mediacao Completa: Todos os acessos a recursos protegidos devem ser mediadas por um
+   mecanismo de controle de acesso, garantindo que apenas usuários autorizados
+   possam acessar os recursos. (Zero Trust)
+5. Desenho aberto: O sistema deve ser projetado de forma que a segurança não dependa do
+   segredo do design ou da implementação, mas sim de mecanismos robustos de
+   segurança.
+6. Separacao de privilegios: O sistema deve ser projetado de forma que
+   diferentes privilégios sejam separados, para que um usuário ou processo com
+   privilégios limitados não possa comprometer a segurança do sistema como um
+   todo.
+7. Minimo mecanismo comum: O sistema deve minimizar o número de mecanismos comuns que podem ser
+   usados por diferentes usuários ou processos, para reduzir o risco de
+   exploração.
+8. Aceitacao psicológica: O sistema deve ser projetado de forma a ser fácil de usar e entender, para
+   que os usuários possam seguir as práticas de segurança sem dificuldade. (nao
+   dificultar a vida dos utilizadores)
+
+---------------/---------------
+
+Descreva e compare criptografia simetrica de bloco com criptografia simetrica de
+fita:
+Criptografia simétrica de bloco e criptografia simétrica de fita são dois tipos
+de criptografia simétrica, onde a mesma chave é usada para criptografar e
+descriptografar os dados.
+
+Criptografia simétrica de bloco: Nesse tipo de criptografia, os dados são
+divididos em blocos de tamanho fixo (por exemplo, 128 bits) e cada bloco é
+criptografado separadamente. Exemplos de algoritmos de criptografia de bloco
+incluem AES (Advanced Encryption Standard) e DES (Data Encryption Standard).
+
+Criptografia simétrica de fita: Nesse tipo de criptografia, os dados são
+processados como um fluxo contínuo de bits, em vez de blocos. A chave é
+aplicada a cada bit ou byte do fluxo de dados. Um exemplo de algoritmo de criptografia de fita é o RC4 (Rivest Cipher 4).
+
+Comparação:
+- A criptografia de bloco é mais adequada para dados estruturados e de tamanho
+  fixo, enquanto a criptografia de fita é mais eficiente para dados de tamanho
+  variável ou fluxos de dados contínuos.
+
+---------------/---------------
+
+Descreva e compare criptografia simetrica com criptografia assimetrica:
+
+Criptografia simétrica e criptografia assimétrica são dois tipos de criptografia
+que diferem na forma como as chaves são usadas para criptografar e
+descriptografar os dados.
+Criptografia simétrica: Nesse tipo de criptografia, a mesma chave é usada para
+criptografar e descriptografar os dados. Isso significa que tanto o remetente
+quanto o destinatário precisam compartilhar a mesma chave secreta. Exemplos de
+algoritmos de criptografia simétrica incluem AES (Advanced Encryption Standard)
+e DES (Data Encryption Standard).
+
+Criptografia assimétrica: Nesse tipo de criptografia, são usadas duas chaves
+diferentes: uma chave pública para criptografar os dados e uma chave privada
+para descriptografar os dados. A chave pública pode ser compartilhada com
+qualquer pessoa, enquanto a chave privada deve ser mantida em segredo. Exemplos
+de algoritmos de criptografia assimétrica incluem RSA (Rivest-Shamir-Adleman) e
+ECC (Elliptic Curve Cryptography).
+
+Comparacao: Simetrica e mais rapida que a assimétrica, mas a assimétrica oferece melhor
+segurança para a troca de chaves e autenticação, pois não requer o
+compartilhamento de uma chave secreta. A criptografia assimétrica é
+frequentemente usada para proteger a troca de chaves em sistemas de criptografia
+simétrica, combinando os benefícios de ambos os tipos de criptografia.
+
+--------------/-----------------
+
+Compare o algoritmo DES Com algoritmo AES:
+
+O DES (Data Encryption Standard) e o AES (Advanced Encryption Standard) são
+dois algoritmos de criptografia simétrica que foram amplamente utilizados para
+proteger dados.
+
+O DES foi desenvolvido na década de 1970 e utiliza uma chave de 56 bits para
+criptografar blocos de dados de 64 bits. No entanto, o DES é considerado inseguro para uso moderno devido à sua chave relativamente curta, que pode ser
+quebrada por ataques de força bruta.
+
+O AES, por outro lado, foi desenvolvido para substituir o DES e é considerado
+muito mais seguro. O AES suporta chaves de 128, 192 ou 256 bits e criptografa
+blocos de dados de 128 bits. O AES é amplamente utilizado em aplicações modernas
+devido à sua segurança robusta e eficiência.
+
+------------/-----------------
+
+Explique o processo de envio de uma mensagem usando criptografia assimetrica com
+o objetivo de garantias as confidenicialidade de informacao:
+
+Para enviar uma mensagem usando criptografia assimétrica com o objetivo de
+garantir a confidencialidade da informação, o processo geralmente envolve os
+seguintes passos:
+1. O remetente obtém a chave pública do destinatário. A chave pública é
+   compartilhada abertamente e pode ser acessada por qualquer pessoa.
+2. O remetente usa a chave pública do destinatário para criptografar a mensagem.
+    Isso garante que apenas o destinatário, que possui a chave privada
+    correspondente, possa descriptografar e acessar o conteúdo da mensagem.
+3. O remetente envia a mensagem criptografada para o destinatário.
+4. O destinatário recebe a mensagem criptografada e usa sua chave privada para
+   descriptografar a mensagem. Como a chave privada é mantida em segredo, apenas
+   o destinatário pode acessar o conteúdo da mensagem, garantindo a
+   confidencialidade da informação.
+
+
+Explique o processo de envio de uma mensagem usando criptografia assimetrica com
+o objetivo de garantias de autenticidade de informacao:
+
+Para enviar uma mensagem usando criptografia assimétrica com o objetivo de
+garantir a autenticidade da informação, o processo geralmente envolve os
+seguintes passos:
+1. O remetente cria um hash da mensagem usando um algoritmo de hash, como
+   SHA-256. O hash é uma representação única da mensagem e serve como uma
+   "impressão digital" da mensagem.
+2. O remetente usa sua chave privada para criptografar o hash da mensagem,
+criando uma assinatura digital. A assinatura digital é anexada à mensagem
+original.
+3. O remetente envia a mensagem original junto com a assinatura digital para o
+   destinatário.
+4. O destinatário recebe a mensagem e a assinatura digital. Ele usa a chave
+   pública do remetente para descriptografar a assinatura digital, obtendo o hash
+   original da mensagem.
+5. O destinatário também calcula o hash da mensagem recebida usando o mesmo
+   algoritmo de hash. Ele compara o hash calculado com o hash obtido da assinatura digital. Se os hashes coincidirem, isso confirma que a mensagem não foi alterada
+   e que a assinatura digital é válida, garantindo a autenticidade da
+   informação. Se os hashes não coincidirem, isso indica que a mensagem foi
+   alterada ou que a assinatura digital é inválida, o que pode ser um sinal de
+   uma tentativa de falsificação ou ataque.
+---------------/-----------------
+
+Expluque o que se entende por MD5:
+MD5 (Message Digest Algorithm 5) é um algoritmo de hash criptográfico que produz
+um valor de hash de 128 bits (16 bytes) a partir de uma entrada de tamanho
+variável. O MD5 é amplamente utilizado para verificar a integridade dos dados,
+pois mesmo uma pequena alteração na entrada resultará em um hash completamente
+diferente. No entanto, o MD5 é considerado inseguro para uso em aplicações de
+segurança devido à sua vulnerabilidade a ataques de colisão, onde diferentes
+entradas podem produzir o mesmo hash. Por isso, é recomendado usar algoritmos de
+hash mais seguros, como SHA-256, para aplicações que exigem alta segurança.
+(garante integridade - 128 bits)
+
+--------------/----------------
+
+Explique o processo de assinatura digital de uma mensagem e o processo de
+verificao da assinatura:
+O processo de assinatura digital de uma mensagem envolve os seguintes passos:
+1. O remetente cria um hash da mensagem usando um algoritmo de hash, como SHA-256.
+2. O remetente usa sua chave privada para criptografar o hash da mensagem,criando a assinatura digital.
+3. O remetente envia a mensagem original junto com a assinatura digital para o
+   destinatário.
+
+------------/-----------
+
+O que se entende por sistemas AAA? (Logs)
+Sistemas AAA (Authentication, Authorization, and Accounting) são um conjunto de
+protocolos e processos usados para gerenciar o acesso a recursos em redes esistemas de informação. O AAA é composto por três componentes principais:
+1. Autenticação (Authentication): O processo de verificar a identidade de um usuário ou dispositivo
+   que está tentando acessar um recurso. Isso pode ser feito por meio de senhas,
+   certificados digitais, tokens ou outros métodos de autenticação.
+2. Autorização (Authorization): O processo de determinar se um usuário ou
+   dispositivo autenticado tem permissão para acessar um recurso específico.
+   Isso envolve a verificação das permissões e privilégios associados à
+   identidade autenticada.
+3. Contabilidade (Accounting): O processo de registrar e monitorar as atividades
+   dos usuários ou dispositivos que acessam os recursos. Isso inclui o registro de
+   informações como o tempo de acesso, os recursos acessados e as ações realizadas,
+   para fins de auditoria e análise de segurança.
+Os sistemas AAA são essenciais para garantir a segurança e o controle de acesso
+em redes e sistemas de informação, ajudando a proteger os recursos contra acesso
+não autorizado e a monitorar as atividades dos usuários para detectar possíveis
+ameaças ou violações de segurança.
+
+----------------/----------------
+
+Explique 3 fatores de autenticao, de 1 exemplo para cada 1 deles:
+Os três fatores de autenticação são:
+1. Fator de autenticação baseado em conhecimento: Este fator envolve algo que o
+   usuário sabe, como uma senha, PIN ou resposta a uma pergunta de segurança.
+   Exemplo: Um usuário precisa inserir sua senha para acessar sua conta de
+   e-mail.
+2. Fator de autenticação baseado em posse: Este fator envolve algo que o usuário
+   possui, como um token de segurança, um cartão inteligente ou um dispositivo
+   móvel. Exemplo: Um usuário recebe um código de autenticação em seu telefone
+   para acessar sua conta bancária online.
+3. Fator de autenticação baseado em inherência: Este fator envolve algo que o
+   usuário é, como características biométricas, como impressão digital, reconhecimento facial ou reconhecimento de voz. Exemplo: Um usuário usa a impressão digital para
+   desbloquear seu smartphone.
+A autenticação multifator (MFA) combina dois ou mais desses fatores para
+aumentar a segurança, tornando mais difícil para um invasor obter acesso não
+autorizado a uma conta ou recurso.
+
+-----------------/----------------
+
+Na sua opiniao que politica de control de acesso se ecnontra mais frequentemente
+nas organizacoes? Justifique a sua resposta:
+
+Na minha opinião, a política de controle de acesso mais frequentemente
+encontrada nas organizações é a política de controle de acesso baseado em função
+(RBAC - Role-Based Access Control). Isso ocorre porque o RBAC é uma abordagem
+eficiente e escalável para gerenciar o acesso a recursos em ambientes
+organizacionais complexos. O RBAC atribui permissões a funções específicas
+dentro da organização, e os usuários são atribuídos a essas funções com base em
+suas responsabilidades etítulos. Isso simplifica a administração de acesso, pois
+as permissões são gerenciadas em nível de função, em vez de individualmente para
+cada usuário. Além disso, o RBAC facilita a implementação de políticas de
+segurança e conformidade,pois as permissões podem ser facilmente revisadas e
+ajustadas conforme necessário, garantindo que os usuários tenham acesso apenas
+aos recursos necessários para desempenhar suas funções, o que ajuda a reduzir o
+risco deacesso não autorizado e violações de segurança.
+
+Utilizadores sao donos de recursos e controlam o acesso aos mesmos (atribuem
+privilegios, transferem a posse do recurso)
+E uma politica de control de acessos flexivel
+Problemas:
+- Utilizadores nao tem nocoes de seguranca, nem grandes bases de tecnologia,
+  logo leva a negligencia, errors e vulnerabilidades.
+
+Control de acesso mandatorio (MAC - Mandatory Access Control):
+- Conceito de rotulos de seguranca estaticos para os obetos e autorizacoes
+  formasi de acesso aos mesmos (politica Global)
+- Nao existe transferencia de permissoes de acesso.
+- Sistema de controlo de acesso mais rigido e seguro, mas menos flexivel.
+- Utilizado em ambientes de alta segurança, como militares e governamentais.
+
+Controlo de acesso baseado em funcoes (RBAC - Role-Based Access Control):
+- Acesso aos recursos e controlado com base nas funcoes desempenhadas pelos
+    utilizadores dentro da organizacao.
+- Permissoes sao atribuídas a funcoes, e os utilizadores sao atribuídos a essas
+    funcoes com base em suas responsabilidades e titulos.
+- Politica de controle de acesso eficiente e escalavel, facilitando a
+administracao de acesso em ambientes organizacionais complexos.
+- Facilita a implementacao de politicas de seguranca e conformidade, garantindo
+que os usuarios tenham acesso apenas aos recursos necessarios para desempenhar
+suas funcoes, reduzindo o risco de acesso nao autorizado e violacoes de
+seguranca.
+O informatico configura as permissoes vai ter acesso a tudo na mesma (RBAC)
+(mais utilizado)
+
+--------/----------
+Descreva 1 ataque que se pode realizar para descobrir uma password.
+
+Brute-Force Attack: Este ataque envolve tentar todas as combinações possíveis de
+caracteres até encontrar a senha correta. O atacante pode usar um software
+automatizado para acelerar o processo, testando rapidamente uma grande
+quantidade de senhas. Embora seja um método eficaz, ele pode ser demorado,
+especialmente se a senha for longa e complexa. Para proteger contra ataques de
+força bruta, é recomendado usar senhas fortes e implementar medidas de segurança
+adicionais, como bloqueio de conta após várias tentativas falhadas.
+
+Dicionario Attack: Este ataque envolve o uso de um dicionário de palavras
+comuns, frases ou combinações de caracteres para tentar adivinhar a senha. O
+atacante pode usar um software que automatiza o processo, testando rapidamente
+uma grande quantidade de senhas comuns. Para proteger contra ataques de
+dicionário, é recomendado usar senhas que não sejam palavras comuns ou
+combinações previsíveis, e incluir caracteres especiais, números e letras
+maiúsculas e minúsculas para aumentar a complexidade da senha.
+
+Rainbow tables: Este ataque envolve o uso de tabelas pré-computadas que contêm
+hashes de senhas comuns. O atacante pode usar essas tabelas para comparar os
+hashes das senhas armazenadas com os hashes pré-computados, permitindo que ele
+descubra a senha original. Para proteger contra ataques de rainbow tables, é
+recomendado usar um processo de hashing forte, como bcrypt ou Argon2, e
+adicionar um salt (valor aleatório) às senhas antes de hashá-las, tornando as
+tabelas de rainbow inúteis.
+
+Phishing: Este ataque envolve o envio de mensagens fraudulentas, como e-mails ou
+mensagens de texto, que parecem ser de fontes confiáveis, com o objetivo
+deenganar os usuários para que revelem suas senhas ou outras informações
+confidenciais. O atacante pode criar um site falso que imita um site legítimo
+para coletar as credenciais dos usuários. Para proteger contra ataques de
+phishing, é importante educar os usuários sobre os riscos do phishing,
+incentivar a verificação de URLs e implementar medidas de segurança adicionais,
+como autenticação multifator (MFA).
+
+--------------/------------
+
+Se o objetivo for filtrar conteudo web que tipo de firewall utilizaria?
+Justifique a sua resposta:
+
+Proxy Firewall: Este tipo de firewall atua como um intermediário entre os
+usuários e a internet, inspecionando o tráfego de rede em nível de aplicação.
+Ele pode analisar o conteúdo das solicitações e respostas HTTP/HTTPS, permitindo
+que ele bloqueie ou permita o acesso a determinados sites com base em políticas
+de segurança definidas pela organização. O Proxy Firewall é eficaz para filtrar
+conteúdo web, pois pode identificar e bloquear conteúdo malicioso, como malware,
+phishing ou sites de baixa reputação, além de oferecer recursos avançados, como
+detecção de intrusões e controle de acesso granular. Ele é uma escolha adequada
+para proteger a rede contra ameaças online e garantir que os usuários tenham
+acesso apenas a conteúdo seguro e apropriado.
+
+
+Para filtrar conteúdo web, eu utilizaria um firewall de aplicação (Application
+Firewall) ou um firewall de próxima geração (Next-Generation Firewall - NGFW).
+Esses tipos de firewalls são projetados para inspecionar o tráfego de rede em
+nível de aplicação, permitindo que eles analisem o conteúdo das solicitações e
+respostas HTTP/HTTPS. Eles podem identificar e bloquear conteúdo malicioso, como
+malware, phishing ou sites de baixa reputação, além de permitir ou negar o
+acesso a determinados sites com base em políticas de segurança definidas pela
+organização. Além disso,esses firewalls podem oferecer recursos avançados, como
+detecção de intrusões, prevenção de ameaças e controle de acesso granular,
+tornando-os uma escolha eficaz para filtrar conteúdo web e proteger a rede
+contra ameaças online.
+
+-------------/-------------
+Compare host IDS com network IDS.
+
+Host IDS (Intrusion Detection System) e Network IDS são dois tipos de sistemas
+de detecção de intrusões que têm funções distintas na segurança da rede.
+Host IDS é um sistema de detecção de intrusões que é instalado em um host
+individual, como um servidor ou um computador pessoal. Ele monitora as atividades
+do sistema, como processos em execução, arquivos acessados e conexões de rede,
+    para identificar comportamentos suspeitos ou maliciosos. O Host IDS é eficaz
+    para detectar ataques que ocorrem dentro do host, como malware, tentativas
+    de escalonamento de privilégios ou atividades anômalas do usuário. Ele pode
+    fornecer informações detalhadas sobre o comportamento do host e ajudar a
+    identificar ameaças específicas ao sistema.
+Network IDS, por outro lado, é um sistema de detecção de intrusões que é
+instalado em um ponto estratégico da rede, como um roteador ou um switch. Ele
+monitora o tráfego de rede em tempo real, analisando os pacotes de dados
+    para identificar padrões de ataque, como tentativas de varredura, ataques de
+negação de serviço (DoS) ou tráfego malicioso. O Network IDS é eficaz para
+detectar ataques que ocorrem na rede, como ataques de negação de serviço (DoS), varreduras de portas ou tráfego malicioso. Ele pode fornecer informações
+sobre a origem do ataque, os tipos de ataques detectados e as vulnerabilidades
+exploradas.
+
+Em resumo, o Host IDS é focado na detecção de intrusões em um host
+específico,enquanto o Network IDS é focado na detecção de intrusões na rede como
+um todo. Ambos os sistemas são importantes para a segurança da rede e podem
+serusados em conjunto para fornecer uma proteção abrangente contra ameaças
+cibernéticas.
+
+-----------/------------
+Explique o que entende por Honeypot e qual a sua utilidade.
+
+Um Honeypot é um sistema ou recurso de rede projetado para atrair e enganar
+atacantes, simulando ser um alvo vulnerável ou valioso. Ele é configurado
+intencionalmente para parecer um sistema legítimo, mas na verdade é uma
+armadilha para capturar informações sobre os atacantes e suas técnicas. O
+objetivo de um Honeypot é coletar dados sobre os métodos de ataque, as
+vulnerabilidades exploradas e as intenções dos atacantes, sem colocar em risco
+os sistemas reais da organização.
+Porque e que e tao importante: ajuda a identificar fragilidades e que tipo de
+ataques os atacantes estão usando, permitindo que as organizações fortaleçam
+suasdefesas e melhorem suas estratégias de segurança. Além disso, os Honeypots
+podem ser usados para desviar a atenção dos atacantes, mantendo-os ocupados com
+oHoneypot enquanto os sistemas reais permanecem protegidos. Eles também podem
+ser usados para fins de pesquisa e desenvolvimento, permitindo que os
+profissionais de segurança testem novas técnicas de defesa e aprimorem suas
+habilidades de resposta a incidentes. Em resumo, os Honeypots são uma ferramenta
+valiosa para a segurança cibernética, fornecendo insights sobre as ameaças e
+ajudando a proteger os sistemas contra ataques futuros.
+Serve para aprenderem!!
+Exemplos: maquinas virtuais, servidores, redes, etc. que são configurados para
+parecerem vulneráveis e atraentes para os atacantes, mas na verdade são
+armadilhas para coletar informações sobre os métodos de ataque e as intenções
+dos atacantes.
+
+------------/------------
+
+O que os alunos tem duvidas e o que professor pode responder?
+- Justificar tudo no teste.
+- Olhar para as perguntas e ver qual e a parte da materia que tenho mais
+  fragilidades. compreender as coisas ao maximo
+- Parte pratica tambem pode perguntado (ferramentas utilizadas na aula) para que
+  e que servem e como se utiliza. (1 ou 2 perguntas mais praticas)
+  6 teoricas e 2 praticas.
+Professor e rigoro e picuinhas justificar coisas - nada de romances.
